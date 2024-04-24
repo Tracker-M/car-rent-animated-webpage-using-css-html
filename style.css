@@ -1,0 +1,669 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dddddd;
+    scroll-behavior: smooth;
+    
+}
+
+
+    /* entire body container  */
+
+#container {
+
+    height: 100vh;
+    width: 99%;
+    background-color: #ffffff;
+    margin: 10px 9px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 18px;
+    overflow: hidden;
+    position: absolute;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    /* border: 5px solid black; */
+}
+        
+        /* navigation container box */
+#container .navigation-container {
+
+    align-self: flex-start;
+    height: 62px;
+    width: 100%;
+    display: flex;
+    /* border: 1px solid black; */
+    align-items: center;
+    margin-top: 16px;
+    z-index: 6;
+    animation: navload 1s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
+
+
+}
+
+#container .navigation-container .navlist {
+
+    display: inherit;
+    list-style: none;
+    align-self: center;
+    margin-left: 60%;
+    position: absolute;
+    justify-content: space-around;
+    width: 597px;
+    height: 8%;
+    align-items: center;
+}
+
+
+
+
+#container .navigation-container .logo {
+
+    align-self: center;
+    margin-left: 10%;
+    font-size: 152%;
+    font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    cursor: pointer;
+    
+}
+
+#container .navigation-container .logo a{
+    
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+#container .navigation-container .navlist a {
+
+    /* text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal; */
+  width: 85px;
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27px;
+}
+
+#container .navigation-container .navlist li{
+
+}
+
+#container .navigation-container .navlist li:hover{
+    color: white;
+}
+#container .navigation-container .navlist a:hover{
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+}
+
+#container .navlist .btn{
+    
+    color: white;
+    background-color: black;
+    border-radius: 22px;
+    width: 25%;
+    height: 38px;
+    cursor: pointer;
+}
+
+
+#container .main {
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#container .main .content{
+    
+    position: absolute;
+    margin-top: 115px;
+    z-index: 3;
+    
+    animation: pageload 1s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
+}
+
+#container .main h1 {
+    margin: 93px 0 0 244px;
+    font-size: 5em;
+    width: 33%;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    line-height: 90px;
+    color: black;
+}
+
+#container .main p{
+    
+    width: 24%;
+    margin: 28px 0 0 249px;
+    font-size: 138%;
+   
+
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+    
+}
+
+#container .imgsection{
+     /* z-index: 5; */
+     position: absolute;
+     /* top: 263px; */
+     top: 278px;
+     /* z-index: 6; */
+     left: 51.5%;
+     
+     animation: cardriving 1s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
+   
+    
+}
+
+
+
+#container .imgsection img{
+    position: absolute;
+    height: 293px;
+    /* margin: 10px 0 0 768px; */
+}
+
+#container .imgsection .tyre1 img{
+
+    
+    /* height: 143px;
+    position: absolute;
+    top: 143px;
+    left: 87px;
+    animation: tyres 1s; */
+    
+    /* height: 145px;
+    position: absolute;
+    top: 144px;
+    left: 86px;
+    animation: tyres 1s linear; */
+    
+    height: 146px;
+    position: absolute;
+    top: 144px;
+    left: 85px;
+    animation: tyres 1s linear forwards ;
+}
+
+
+#container .imgsection .tyre2 img{
+
+    
+    height: 146px;
+    position: absolute;
+    top: 142px;
+    left: 647px;
+    animation: tyres 1s linear forwards;
+    /* display: none; */
+    
+}
+
+
+
+#container .main .content .circles{
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: inline-flex;
+    margin-left: 65px;
+    
+}
+
+.flick{
+    color: white;
+}
+
+
+@keyframes tyres{
+    
+    /* 0%{
+        
+        transform: rotate(0);
+    } */
+    
+    /* 50%{
+        
+        transform: rotate(-90deg);
+    } */
+    
+    100%{
+        
+        transform: rotate(-100deg);
+    }
+    
+    .tyre1{
+        
+        transform: rotate(-180deg);
+    }
+    
+}
+
+@keyframes cardriving{
+
+    0%{
+        
+        transform:translateX(601px) ;
+    }
+    
+    100%{
+        
+        transform: translateX(0px);
+    }
+    
+}
+
+
+
+@keyframes pageload {
+
+    0%{
+        
+        transform: translateY(183px);
+    }
+    
+    100%{
+        
+        transform: translate(0);
+    }
+    
+}
+
+
+
+
+@keyframes navload {
+
+    0%{
+        transform: translatey(-42px);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+}
+    
+    
+    /* BLINKEER */
+    
+    .blinker{
+        margin: -6px;
+        padding: 0;
+    }
+
+
+.blinkeri{
+        
+        animation:blinker1 2s infinite linear(0 0%, 1.33 9.16%, 1.35 11.79%, 1.3 11.64%, 1.31 12.13%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.37 15.33%, 1.32 11.06%, 1.35 12.37%, 1.35 13.32%, 1.35 13.68%, 1.37 9.25%, 1.33 15.99%, 1.29 12.99%, 1.43 10.52%, 1.32 9.28%, 1.37 8.3%, 1.37 2.85%, 1.34 13.88%, 1.29 15.86%, 1.4 -0.18%, 1.45 6.24%, 1.43 10.69%, 1.39 9.85%, 1.45 11.88%, 1.36 6.92%, 1.36 9.26%, 1.44 8.46%, 1.38 11.18%);
+        
+}
+
+/* animation: blinker 2s 9s infinite cubic-bezier(0.91, -0.36, 0.58, 1); */
+ .blinkern{
+    animation:blinker2 2s infinite linear(0 0%, 1.33 9.16%, 1.35 11.79%, 1.3 11.64%, 1.31 12.13%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.37 15.33%, 1.32 11.06%, 1.35 12.37%, 1.35 13.32%, 1.35 13.68%, 1.37 9.25%, 1.33 15.99%, 1.29 12.99%, 1.43 10.52%, 1.32 9.28%, 1.37 8.3%, 1.37 2.85%, 1.34 13.88%, 1.29 15.86%, 1.4 -0.18%, 1.45 6.24%, 1.43 10.69%, 1.39 9.85%, 1.45 11.88%, 1.36 6.92%, 1.36 9.26%, 1.44 8.46%, 1.38 11.18%) forwards;
+    
+
+}
+
+.blinkerd{
+
+    animation:blinker3 2s infinite linear(0 0%, 1.33 9.16%, 1.35 11.79%, 1.3 11.64%, 1.31 12.13%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.37 15.33%, 1.32 11.06%, 1.35 12.37%, 1.35 13.32%, 1.35 13.68%, 1.37 9.25%, 1.33 15.99%, 1.29 12.99%, 1.43 10.52%, 1.32 9.28%, 1.37 8.3%, 1.37 2.85%, 1.34 13.88%, 1.29 15.86%, 1.4 -0.18%, 1.45 6.24%, 1.43 10.69%, 1.39 9.85%, 1.45 11.88%, 1.36 6.92%, 1.36 9.26%, 1.44 8.46%, 1.38 11.18%) forwards;
+    
+}
+
+.blinkeri2{
+
+    animation:blinker4 2s infinite linear(0 0%, 1.33 9.16%, 1.35 11.79%, 1.3 11.64%, 1.31 12.13%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.37 15.33%, 1.32 11.06%, 1.35 12.37%, 1.35 13.32%, 1.35 13.68%, 1.37 9.25%, 1.33 15.99%, 1.29 12.99%, 1.43 10.52%, 1.32 9.28%, 1.37 8.3%, 1.37 2.85%, 1.34 13.88%, 1.29 15.86%, 1.4 -0.18%, 1.45 6.24%, 1.43 10.69%, 1.39 9.85%, 1.45 11.88%, 1.36 6.92%, 1.36 9.26%, 1.44 8.46%, 1.38 11.18%) forwards;
+    
+}
+
+.blinkera{
+
+    animation:blinker5 2s infinite linear(0 0%, 1.33 9.16%, 1.35 11.79%, 1.3 11.64%, 1.31 12.13%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.37 15.33%, 1.32 11.06%, 1.35 12.37%, 1.35 13.32%, 1.35 13.68%, 1.37 9.25%, 1.33 15.99%, 1.29 12.99%, 1.43 10.52%, 1.32 9.28%, 1.37 8.3%, 1.37 2.85%, 1.34 13.88%, 1.29 15.86%, 1.4 -0.18%, 1.45 6.24%, 1.43 10.69%, 1.39 9.85%, 1.45 11.88%, 1.36 6.92%, 1.36 9.26%, 1.44 8.46%, 1.38 11.18%) forwards;
+    
+}  
+
+@keyframes blinker1 {
+
+        0%{
+            color: black;
+            transition-delay: 10s;
+        }
+        
+        20%{
+            transition-delay: 10s;
+            color: black;
+            
+        }
+        
+        30%{
+            transition-delay: 10s;
+            color: black;
+            
+        }
+        
+        40%{
+            transition-delay: 10s;
+            color: black;
+            
+        }
+        
+        50%{
+            transition-delay: 10s;
+            color: black;
+            
+        }
+        
+        60%{
+            transition-delay: 10s;
+            color: black;
+            
+        }
+        
+        70%{
+            transition-delay: 10s;
+            color: black;
+            
+        }
+        
+        
+        80%{
+            transition-delay: 10s;
+            color: black;
+            
+        }
+        
+        90%{
+            transition-delay: 10s;
+            color: black;
+            
+        }
+        
+        100%{
+            color: white;
+            /* color: black; */
+        }
+    
+}
+
+
+@keyframes blinker2 {
+
+    0%{
+        color: white;
+        transition-delay: 10s;
+    }
+    
+    20%{
+        transition-delay: 10s;
+        color: white;
+        
+    }
+    
+    30%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    40%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    50%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    60%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    70%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    
+    80%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    90%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    100%{
+        color: white;
+        /* color: black; */
+    }
+
+}
+
+ @keyframes blinker3 {
+
+    0%{
+        color: white;
+        transition-delay: 10s;
+    }
+    
+    20%{
+        transition-delay: 10s;
+        color: white;
+        
+    }
+    
+    30%{
+        transition-delay: 10s;
+        color: white;
+        
+    }
+    
+    40%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    50%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    60%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    70%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    
+    80%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    90%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    100%{
+        color: white;
+        /* color: black; */
+    }
+
+}
+
+@keyframes blinker4 {
+
+    0%{
+        color: white;
+        transition-delay: 10s;
+    }
+    
+    20%{
+        transition-delay: 10s;
+        color: white;
+        
+    }
+    
+    30%{
+        transition-delay: 10s;
+        color: white;
+        
+    }
+    
+    40%{
+        transition-delay: 10s;
+        color: white;
+        
+    }
+    
+    50%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    60%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    70%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    
+    80%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    90%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    100%{
+        color: white;
+        /* color: black; */
+    }
+
+}
+
+@keyframes blinker5 {
+
+    0%{
+        color: white;
+        transition-delay: 10s;
+    }
+    
+    20%{
+        transition-delay: 10s;
+        color: white;
+        
+    }
+    
+    30%{
+        transition-delay: 10s;
+        color: white;
+        
+    }
+    
+    40%{
+        transition-delay: 10s;
+        color: white;
+        
+    }
+    
+    50%{
+        transition-delay: 10s;
+        color: white;
+        
+    }
+    
+    60%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    70%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    
+    80%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    90%{
+        transition-delay: 10s;
+        color: black;
+        
+    }
+    
+    100%{
+        color: white;
+        /* color: black; */
+    }
+
+} 
